@@ -1,7 +1,7 @@
 let binding
 
 if (process.env.SUPERSTRING_USE_BROWSER_VERSION) {
-  binding = require('./browser');
+  binding = undefined;
 
   const {TextBuffer, Patch} = binding
   const {findSync, findAllSync, findAndMarkAllSync, findWordsWithSubsequenceInRange, getCharacterAtPosition} = TextBuffer.prototype
